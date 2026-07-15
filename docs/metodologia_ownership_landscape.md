@@ -223,7 +223,7 @@ El análisis se ejecutó utilizando **Python 3.13** en un entorno de desarrollo 
 * Modelado estadístico y análisis dimensional: `scikit-learn (v1.4)`.
 * Visualización gráfica de alta calidad: `matplotlib (v3.8)` y `seaborn (v0.13)`.
 
-*Nota de disponibilidad*: El código fuente de automatización (`generate_verbose_notebook.py`), el Jupyter Notebook ejecutable completo (`Analisis_Ownership_Landscape.ipynb`), el diccionario de datos de propiedad y la matriz de proporciones agregadas están disponibles en el repositorio del proyecto para permitir la replicabilidad completa por pares.
+
 
 ---
 
