@@ -65,13 +65,13 @@ A continuación, se presenta la composición detallada de los modelos de propied
    * *Valores*: Es la liga con mayor crecimiento de diversidad. Su Entropía sube de **1.735** a **1.848** (máximo del estudio) y su HHI se reduce de **0.185** a **0.170** (concentración mínima).
    * *Explicación*: Coexistencia equilibrada de múltiples lógicas de propiedad. En 2024 conviven de manera balanceada 4 clubes controlados por socios (20%), 5 bajo propiedad privada nacional (25%), 3 bajo propiedad privada extranjera (15%), 3 de propiedad híbrida (15%), y 2 controlados por fondos de inversión (10%). La penetración de multipropiedad es moderada (25%).
 3. **Premier League (Ecosistema Global y Financiarizado)**:
-   * *Valores*: Mantiene una Entropía muy alta y estable (de **1.713** a **1.730**) y un HHI bajo y plano (**0.190**).
+   * *Valores*: Mantiene una Entropía muy alta y estable (de **1.713** a **1.730**) y un HHI bajo y plano (de **0.195** a **0.190**).
    * *Explicación*: Destaca por tener la penetración de MCO más alta del mundo (**65.0%** en 2024, con 13 de 20 clubes integrados en grupos multipropiedad). Es el entorno más financiarizado e internacionalizado: el 45% de la liga está en manos de fondos de inversión o corporaciones multipropiedad.
 4. **Serie A (Transición Hacia los Fondos Internacionales)**:
    * *Valores*: Sufre fluctuaciones marcadas. Su Entropía cayó de **1.484** (2019) a un mínimo de **1.290** (2023) con el HHI subiendo a **0.335**, rebotando a **1.431** y **0.265** en 2024.
-   * *Explicación*: La caída histórica de la diversidad refleja la colonización de la liga por parte de fondos extranjeros y grupos privados internacionales, desplazando a las familias y empresarios locales italianos tradicionales (el modelo `domestic private` cayó del 45% al 35%). El rebote de 2024 se debió exclusivamente al ascenso de clubes con estructuras privadas domésticas pequeñas.
+   * *Explicación*: La caída histórica de la diversidad refleja la colonización de la liga por parte de fondos extranjeros y grupos privados internacionales, desplazando a las familias y empresarios locales italianos tradicionales (el modelo `domestic private` cayó del 40% al 35%). El rebote de 2024 se debió exclusivamente al ascenso de clubes con estructuras privadas domésticas pequeñas.
 5. **Ligue 1 (Privatización y Alta Volatilidad)**:
-   * *Valores*: Su Entropía cayó de **1.539** a **1.426** y su HHI subió de **0.250** a **0.272**.
+   * *Valores*: Su Entropía cayó de **1.539** a **1.426** y su HHI subió de **0.270** a **0.272**.
    * *Explicación*: Refleja la inestabilidad de los clubes franceses, con compras recurrentes y alternancia de ascensos. Está dominada por el modelo privado doméstico (38.9%) y extranjero (27.8%), con un crecimiento temporal de MCO (que llegó al 35% en 2022).
 
 ### Evolución Temporal de Diversidad (Entropía), Concentración (HHI) y Multipropiedad (MCO)
@@ -81,7 +81,7 @@ El siguiente gráfico ilustra cómo han cambiado estas variables configuracional
 
 * **Interpretación del Gráfico**: 
   1. **Entropía vs HHI (El espejo matemático)**: Las curvas de Entropía (panel izquierdo) y HHI (panel central) muestran trayectorias perfectamente invertidas y simétricas. La Bundesliga se mantiene plana en el extremo inferior de diversidad (Entropía $\approx 1.05$) y en el extremo superior de concentración (HHI $\approx 0.48$). LaLiga y la Premier League lideran el índice de diversidad (Entropía > 1.70, HHI < 0.19).
-  2. **El despegue de la Multipropiedad (MCO)**: El panel derecho evidencia que la penetración de redes de multipropiedad es un fenómeno global al alza, liderado por la Premier League (que crece del 60% al 65%), seguida de Serie A (que alcanza el 30%) y Ligue 1 (27.8%), mientras que la Bundesliga permanece inalterada en su nivel mínimo (5.6%).
+  2. **El despegue de la Multipropiedad (MCO)**: El panel derecho evidencia que la penetración de redes de multipropiedad es un fenómeno global al alza, liderado por la Premier League (que oscila entre el 60% y el 70%, cerrando en el 65% en 2024), seguida de Serie A (que alcanza el 30%) y Ligue 1 (27.8%), mientras que la Bundesliga permanece inalterada en su nivel mínimo (5.6%).
 
 ---
 

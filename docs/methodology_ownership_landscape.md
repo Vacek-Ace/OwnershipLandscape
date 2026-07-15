@@ -110,6 +110,12 @@ As a graphical representation of the composition of matrix $\mathbf{P}$, the fol
 
 ![Configurational Structure of the Ownership Landscape by League (2024 Season)](../images/ownership_profiles_2024.png)
 
+### Configurational Analysis of the Profiles (2024 Snapshot)
+The detailed composition of ownership at the close of the 2024-2025 season reveals three distinct structural configurations in European football:
+1. **The Traditional-Associative Model (Germany)**: The Bundesliga exhibits exceptional structural homogeneity dominated by the democratic member-owned model (`member-owned`, $66.7\%$), shielded by the "50+1" regulatory rule. It is the only setting where trans-national multi-club ownership and investment funds lack significant penetration.
+2. **The Global and Financialized Ecosystem (England)**: The Premier League represents the opposite extreme, with a massive penetration of corporate multi-club ownership (`corporate-MCO`, $30\%$) and foreign private capital (`foreign private`, $25\%$). The MCO rate reaches a record $65.0\%$ (13 out of 20 clubs), showcasing the colonization of the league by trans-national networks and venture capital vehicles.
+3. **Hybrid and Transition Landscapes (Spain, Italy, and France)**: Spanish LaLiga shows a balanced coexistence of logics where democratic clubs ($20\%$), domestic private ownership ($25\%$), foreign capital ($15\%$), and hybrid models ($15\%$) coexist. Meanwhile, Italian Serie A and French Ligue 1 show extreme fragmentation marked by the progressive retreat of traditional local families in the face of the entry of investment funds (`investment fund`, such as at AC Milan or Inter) and MCO networks.
+
 ---
 
 ## 5. Shannon Entropy and Herfindahl-Hirschman Index (HHI)
@@ -142,6 +148,12 @@ The evolution of these two one-dimensional indicators ($H_{l,t}$ and $HHI_{l,t}$
 
 ![Evolution of Ownership Diversity, Concentration, and Multi-Club Ownership (2019-2024)](../images/temporal_indices.png)
 
+### Trajectories of Diversity and Concentration (2019-2024)
+The longitudinal evolution of diversity ($H$) and concentration ($HHI$) metrics over the last six seasons confirms three dynamics of change:
+* **Indicator Symmetry (The Mathematical Mirror)**: The longitudinal panels show perfectly inverted curves between Entropy and HHI. The Bundesliga remains motionless at the lower extreme of diversity (Entropy $\approx 1.05$) and upper extreme of concentration (HHI $\approx 0.48$), while LaLiga and the Premier League constantly lead the diversity index (Entropy $> 1.70$, HHI $< 0.19$).
+* **Volatility in Serie A and Ligue 1**: Both environments exhibit the largest annual oscillations. In Serie A, the sharp drop in entropy to a minimum of $1.290$ in 2023 reflects the process of financial colonization of Italian football, where foreign investment funds and international consortia absorbed and concentrated control of historic clubs.
+* **The Expansion of Multi-Club Ownership (MCO)**: The MCO rate (right panel) is a global rising phenomenon. fluctuates at high levels (between $60\%$ and $70\%$) in the Premier League, ending at $65\%$ in 2024, reaches $30\%$ in Serie A, and $27.8\%$ in Ligue 1. The Bundesliga remains unchanged at its minimum level ($5.6\%$), acting as a regulatory anomaly on the continent.
+
 ---
 
 ## 6. Principal Component Analysis (PCA)
@@ -161,6 +173,12 @@ The conventional Principal Component Analysis (PCA), parameterized following con
 The projection of the longitudinal trajectories of each league landscape in the two-dimensional PC1-PC2 space is presented below, divided by the described analytical quadrants:
 
 ![Historical Configurational Trajectories of Ownership Landscapes (PCA 2019-2024)](../images/pca_trajectories.png)
+
+### Interpretation of PCA Quadrants and Trajectories
+The two-dimensional projection of the 30 league-season observations reveals the existence of path-dependent evolutionary paths and typifies the competitive environments:
+* **Quadrant III (Democratic and Traditional Uniclub - Bottom Left)**: The Bundesliga remains stationary in this space (PC1 $\approx -3.3$). The 50+1 rule operates as an absolute institutional stabilizer that prevents the league from moving toward financialization or trans-national multi-club ownership.
+* **Quadrant IV (Private Commercial Uniclub - Bottom Right)**: Italian Serie A and French Ligue 1 start deep in this quadrant, characterized by private owners acting as individual commercial entities. However, Serie A exhibits a clear upward trajectory ($y = -1.55$ in 2019 to $y = -0.36$ in 2024), approaching Quadrant I as foreign institutional funds and consortia displace local family owners.
+* **Quadrant I (Transnational Financial MCO - Top Right)**: Represents the most financialized and globally integrated ecosystem. The Premier League and Ligue 1 oscillate dynamically across the borders of this quadrant. The Premier League ends in 2024 at the upper limit ($y = 2.62$) due to its very high rate of multi-club ownership, consolidating a trajectory of globalized financialization with no return to the traditional model.
 
 ### Treatment of Compositional Data (CoDa)
 The proportions of the Ownership Landscape matrix are compositional data by definition (they sum to 1.0 and are bounded in the simplex space). Consequently, in accordance with contemporary methodological theory for compositional data analysis (Pawlowsky-Glahn et al., 2015), two methodological approaches are applied to ensure statistical robustness:

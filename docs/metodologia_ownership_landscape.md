@@ -136,6 +136,12 @@ Como representación gráfica de la composición de la matriz $\mathbf{P}$, la s
 
 ![Configurational Structure of the Ownership Landscape by League (2024 Season)](../images/ownership_profiles_2024.png)
 
+### Análisis Configuracional de los Perfiles (Snapshot 2024)
+La composición detallada de la propiedad al cierre de la temporada 2024-2025 devela tres configuraciones estructurales diferenciadas en el fútbol europeo:
+1. **El Modelo Tradicional-Asociativo (Alemania)**: La Bundesliga exhibe una homogeneidad estructural excepcional dominada por el modelo democrático de socios (`member-owned`, $66.7\%$), blindado por la regla regulatoria del "50+1". Es el único entorno donde la multipropiedad transnacional y los fondos de inversión carecen de penetración significativa.
+2. **El Ecosistema Global y Financiarizado (Inglaterra)**: La Premier League representa el extremo opuesto, con una penetración masiva de multipropiedad corporativa (`corporate-MCO`, $30\%$) y capital privado extranjero (`foreign private`, $25\%$). La tasa de MCO alcanza un récord del $65.0\%$ (13 de 20 clubes), evidenciando la colonización de la liga por redes transnacionales y vehículos de capital de riesgo.
+3. **Los Paisajes Híbridos y de Transición (España, Italia y Francia)**: LaLiga española muestra una convivencia equilibrada de lógicas donde coexisten clubes democráticos ($20\%$), propiedad privada nacional ($25\%$), capital extranjero ($15\%$) e híbrido ($15\%$). Por su parte, la Serie A italiana y la Ligue 1 francesa muestran una fragmentación extrema marcada por la progresiva retirada de las familias locales tradicionales ante la entrada de fondos de inversión (`investment fund`, como en AC Milan o Inter) y redes de MCO.
+
 ---
 
 ## 5. Entropía de Shannon e Índice Herfindahl-Hirschman (HHI)
@@ -177,6 +183,12 @@ La evolución de estos dos indicadores unidimensionales ($H_{l,t}$ y $HHI_{l,t}$
 
 ![Evolution of Ownership Diversity, Concentration, and Multi-Club Ownership (2019-2024)](../images/temporal_indices.png)
 
+### Trayectorias de Diversidad y Concentración (2019-2024)
+La evolución longitudinal de las métricas de diversidad ($H$) y concentración ($HHI$) durante las últimas seis temporadas ratifica tres dinámicas de cambio:
+* **La Simetría de los Indicadores (El Espejo Matemático)**: Los paneles longitudinales muestran curvas perfectamente invertidas entre la Entropía y el HHI. La Bundesliga se mantiene inmóvil en el extremo inferior de diversidad (Entropía $\approx 1.05$) y superior de concentración (HHI $\approx 0.48$), mientras que LaLiga y la Premier League lideran de forma constante el índice de diversidad (Entropía $> 1.70$, HHI $< 0.19$).
+* **La Volatilidad de la Serie A y Ligue 1**: Ambos entornos exhiben las mayores oscilaciones anuales. En la Serie A, la abrupta caída de la entropía hasta un mínimo de $1.290$ en 2023 refleja el proceso de colonización financiera del fútbol italiano, donde los fondos de inversión extranjeros y consorcios internacionales absorbieron y concentraron el control de los clubes históricos.
+* **La Expansión de la Multipropiedad (MCO)**: La tasa de MCO (panel derecho) es un fenómeno global al alza. oscila en niveles muy altos (entre el $60\%$ y el $70\%$) en la Premier League, cerrando en el $65\%$ en 2024, alcanza el $30\%$ en la Serie A y el $27.8\%$ en la Ligue 1. La Bundesliga permanece inalterada en su nivel mínimo ($5.6\%$), actuando como una anomalía regulatoria en el continente.
+
 ---
 
 ## 6. Análisis de Componentes Principales (PCA)
@@ -198,6 +210,12 @@ El Análisis de Componentes Principales (PCA) convencional, parametrizado siguie
 La proyección de las trayectorias longitudinales de cada landscape liguero en el espacio bidimensional PC1-PC2 se presenta a continuación, dividida por los cuadrantes analíticos descritos:
 
 ![Historical Configurational Trajectories of Ownership Landscapes (PCA 2019-2024)](../images/pca_trajectories.png)
+
+### Interpretación de los Cuadrantes y Trayectorias del PCA
+La proyección bidimensional de las 30 observaciones liga-temporada devela la existencia de senderos evolutivos dependientes de la trayectoria (*path dependency*) y tipifica los entornos competitivos:
+* **Cuadrante III (Democrático y Tradicional Uniclub - Abajo a la Izquierda)**: La Bundesliga permanece inmóvil en este espacio (PC1 $\approx -3.3$). La regla 50+1 opera como un estabilizador institucional absoluto que impide que la liga se desplace hacia la financiarización o la multipropiedad transnacional.
+* **Cuadrante IV (Privatización Comercial Uniclub - Abajo a la Derecha)**: La Serie A italiana y la Ligue 1 francesa inician profundamente en este cuadrante, caracterizado por propietarios privados que actúan como entidades comerciales individuales. Sin embargo, la Serie A exhibe una clara trayectoria ascendente ($y = -1.55$ en 2019 a $y = -0.36$ en 2024), aproximándose al Cuadrante I a medida que los fondos y consorcios institucionales desplazan a los propietarios familiares locales.
+* **Cuadrante I (Financiarización Transnacional MCO - Arriba a la Derecha)**: Representa el ecosistema más financiarizado e integrado en redes globales. La Premier League y la Ligue 1 oscilan dinámicamente cruzando las fronteras de este cuadrante. La Premier League termina en 2024 en el límite superior ($y = 2.62$) por su altísima tasa de multipropiedad, consolidando una trayectoria de financiarización globalizada sin retorno al modelo tradicional.
 
 ### Tratamiento de Datos Composicionales (CoDa)
 
