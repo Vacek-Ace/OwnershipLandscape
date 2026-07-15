@@ -52,7 +52,7 @@ Jolliffe, I. T., & Cadima, J. (2016). Principal component analysis: a review and
 Pawlowsky-Glahn, V., Egozcue, J. J., & Tolosana-Delgado, R. (2015). *Modeling and Analysis of Compositional Data*. John Wiley & Sons. https://doi.org/10.1002/9781119003144
 
 * **¿De qué trata?**: El libro de texto moderno y de referencia definitiva para el análisis de datos composicionales (datos acotados a un simplex de suma constante, como las proporciones). Presenta las bases matemáticas para analizar composiciones en coordenadas reales mediante transformaciones log-ratio (CLR, ALR, ILR) y detalla el PCA composicional.
-* **Relevancia para la investigación**: Es la justificación estadística de nuestra prueba de sensibilidad composicional. Explica por qué realizar PCA convencional sobre proporciones brutas puede distorsionar las correlaciones y la posición geométrica debido al simplex de suma 1.0, y valida la aplicación de la transformación Centered Log-Ratio (CLR) como test de robustez geométrica (Spearman PC1 > 0.96).
+* **Relevancia para la investigación**: Es la justificación estadística de nuestra prueba de sensibilidad composicional. Explica por qué realizar PCA convencional sobre proporciones brutas puede distorsionar las correlaciones y la posición geométrica debido al simplex de suma 1.0, y valida la aplicación de la transformación Centered Log-Ratio (CLR) como test de robustez geométrica (Pearson PC1 > 0.96, Spearman > 0.88).
 
 ---
 

@@ -195,42 +195,66 @@ La evolución longitudinal de las métricas de diversidad ($H$) y concentración
 
 El PCA se utiliza para reducir la dimensionalidad de la matriz de proporciones $\mathbf{P}$ y representar en un plano bidimensional las diferencias configuracionales de las 30 observaciones liga-temporada.
 
-### Parámetros del PCA Convencional
+### 6.1. Cargas de los Componentes Principales (Loadings)
 
-El Análisis de Componentes Principales (PCA) convencional, parametrizado siguiendo las directrices contemporáneas de reducción dimensional (Jolliffe & Cadima, 2016), se aplica mediante el siguiente procedimiento:
+Para comprender la estructura geométrica del espacio configuracional, se calculan las cargas de las variables en los dos primeros componentes principales (PC1 y PC2), los cuales explican de forma conjunta el **$72.5\%$** de la varianza acumulada de la estructura de propiedad:
 
-1. **Variables Incluidas**: Las proporciones de los 8 modelos de propiedad (`prop_member-owned`, `prop_domestic private`, `prop_foreign private`, `prop_investment fund`, `prop_hybrid`, `prop_corporate-MCO`, `prop_state-linked` y `prop_unknown`).
-2. **Estandarización**: Dado que las proporciones tienen escalas similares pero varianzas muy distintas (ej. `member-owned` tiene valores altos en Alemania y nulos en Inglaterra), las variables se centran y estandarizan para tener media 0 y desviación típica 1. Esto evita que los modelos de alta proporción dominen espuriamente sobre los de menor proporción pero de gran relevancia configuracional (ej. `state-linked`).
-3. **Criterio de Selección de Componentes**: Se seleccionan los dos primeros componentes principales (PC1 y PC2) siguiendo el criterio de Kaiser (autovalores mayores que 1) y el análisis del gráfico de sedimentación (*scree plot*), logrando explicar conjuntamente el **$72.5\%$** de la varianza acumulada de la estructura de propiedad.
-4. **Interpretación de Cargas (Loadings)**: Los componentes no se etiquetan *a priori*, sino a partir de la correlación observada de las variables originales:
-   * **PC1 ($48.0\%$ de varianza)**: Actúa como el **Eje de Internacionalización y Financiarización**. Tiene cargas positivas elevadas en `investment fund`, `foreign private` y `corporate-MCO`, y cargas negativas elevadas en `member-owned` y `hybrid`.
-   * **PC2 ($24.5\%$ de varianza)**: Actúa como el **Eje de Concentración Tradicional frente a Capital Financiero**. Separa los paisajes dominados por inversión corporativa y fondos de los paisajes de privatización uniclub doméstica o tradicional.
-5. **Visualización de Trayectorias**: Se proyectan las coordenadas (*scores*) de las 30 observaciones liga-temporada en el espacio PC1-PC2. Para capturar la dinámica de cambio histórico, se conectan secuencialmente los años de cada liga (de 2019 a 2024) mediante vectores direccionales (flechas), visualizando si las ligas convergen o divergen en el tiempo.
+| Modelo de Propiedad | Carga PC1 ($48.0\%$) | Carga PC2 ($24.5\%$) |
+| :--- | :---: | :---: |
+| **Member-owned** (`prop_member-owned`) | $-0.463$ | $-0.247$ |
+| **Domestic private** (`prop_domestic private`) | $+0.448$ | $-0.270$ |
+| **Foreign private** (`prop_foreign private`) | $+0.441$ | $+0.143$ |
+| **Investment fund** (`prop_investment fund`) | $+0.484$ | $+0.086$ |
+| **Hybrid** (`prop_hybrid`) | $-0.359$ | $+0.279$ |
+| **Corporate-MCO** (`prop_corporate-MCO`) | $+0.040$ | $+0.630$ |
+| **State-linked** (`prop_state-linked`) | $-0.134$ | $+0.445$ |
+| **Unknown** (`prop_unknown`) | $-0.091$ | $-0.406$ |
 
-La proyección de las trayectorias longitudinales de cada landscape liguero en el espacio bidimensional PC1-PC2 se presenta a continuación, dividida por los cuadrantes analíticos descritos:
+#### Interpretación de las Dimensiones:
+*   **Componente Principal 1 (PC1 - Eje de Internacionalización y Financiarización)**: Este eje (que explica el $48.0\%$ de la varianza) discrimina entre modelos basados en el capital financiero e internacional y aquellos de control social y tradicional. Los valores **positivos** en este eje están determinados por lógicas comerciales avanzadas: fondos de inversión ($+0.484$), capital privado nacional ($+0.448$) y capital privado extranjero ($+0.441$). Por el contrario, los valores **negativos** representan el blindaje de la gobernanza asociativa: clubes de socios ($-0.463$) y modelos mixtos híbridos ($-0.359$).
+*   **Componente Principal 2 (PC2 - Eje de Estructuras Transnacionales y Geopolíticas)**: Este eje (que explica el $24.5\%$ de la varianza) separa las ligas que albergan estructuras de propiedad complejas integradas en redes supra-club de aquellas compuestas por entidades uniclub tradicionales. Los valores **positivos** corresponden a estructuras corporativas de multipropiedad (`corporate-MCO`: $+0.630$) y vehículos con vínculos estatales o geopolíticos soberanos (`state-linked`: $+0.445$). Los valores **negativos** señalan la dominancia de clubes individuales independientes y tradicionales (`unknown`: $-0.406$, `domestic private`: $-0.270$, y `member-owned`: $-0.247$).
+
+---
+
+### 6.2. Espacio Configuracional: Definición de los Cuadrantes
+
+La intersección de los ejes PC1 y PC2 delimita **cuatro cuadrantes configuracionales** bien definidos que representan diferentes lógicas competitivas y modelos de negocio:
+
+*   **Cuadrante I (Superior Derecho: PC1 > 0, PC2 > 0) - Financiarización Transnacional MCO**: Representa paisajes de propiedad altamente financiarizados (fondos de inversión, propietarios extranjeros) que además están integrados de forma masiva en redes multipropiedad (MCO) o bajo la influencia directa de estados soberanos. Es el cuadrante de la globalización corporativa y las marcas globales.
+*   **Cuadrante II (Superior Izquierdo: PC1 < 0, PC2 > 0) - Híbrido / Colectivo con Redes**: Representa paisajes de propiedad que conservan una fuerte base de control social o democrático local (valores negativos de PC1) pero que incorporan lógicas corporativas superiores, participación híbrida o una penetración moderada de redes de multipropiedad (valores positivos de PC2). LaLiga española (debido a su fuerte presencia de clubes híbridos y de socios, combinada con compras controladas de MCO como el Girona) y la Premier League en sus años de menor financiarización extrema se ubican en este cuadrante.
+*   **Cuadrante III (Inferior Izquierdo: PC1 < 0, PC2 < 0) - Democrático y Tradicional Uniclub**: Representa el modelo clásico del fútbol europeo: clubes gobernados democráticamente por sus socios locales que operan de forma independiente como entidades locales individuales, aislados de multipropiedades transnacionales o vehículos soberanos.
+*   **Cuadrante IV (Inferior Derecho: PC1 > 0, PC2 < 0) - Privatización Comercial Uniclub**: Ligas dominadas por propietarios privados (nacionales o extranjeros) y vehículos financieros institucionales, pero estructuradas en torno a clubes que actúan como entidades comerciales independientes y de cartera individual, sin agregarse en grandes redes MCO transnacionales.
+
+---
+
+### 6.3. Análisis de Trayectorias y Cambios de Cuadrante (2019-2024)
+
+Proyectando las coordenadas (*scores*) de las 30 observaciones liga-temporada en este plano, visualizamos las trayectorias longitudinales mediante vectores direccionales (flechas) de 2019 a 2024:
 
 ![Historical Configurational Trajectories of Ownership Landscapes (PCA 2019-2024)](../images/pca_trajectories.png)
 
-### Interpretación de los Cuadrantes y Trayectorias del PCA
-La proyección bidimensional de las 30 observaciones liga-temporada devela la existencia de senderos evolutivos dependientes de la trayectoria (*path dependency*) y tipifica los entornos competitivos:
-* **Cuadrante III (Democrático y Tradicional Uniclub - Abajo a la Izquierda)**: La Bundesliga permanece inmóvil en este espacio (PC1 $\approx -3.3$). La regla 50+1 opera como un estabilizador institucional absoluto que impide que la liga se desplace hacia la financiarización o la multipropiedad transnacional.
-* **Cuadrante IV (Privatización Comercial Uniclub - Abajo a la Derecha)**: La Serie A italiana y la Ligue 1 francesa inician profundamente en este cuadrante, caracterizado por propietarios privados que actúan como entidades comerciales individuales. Sin embargo, la Serie A exhibe una clara trayectoria ascendente ($y = -1.55$ en 2019 a $y = -0.36$ en 2024), aproximándose al Cuadrante I a medida que los fondos y consorcios institucionales desplazan a los propietarios familiares locales.
-* **Cuadrante I (Financiarización Transnacional MCO - Arriba a la Derecha)**: Representa el ecosistema más financiarizado e integrado en redes globales. La Premier League y la Ligue 1 oscilan dinámicamente cruzando las fronteras de este cuadrante. La Premier League termina en 2024 en el límite superior ($y = 2.62$) por su altísima tasa de multipropiedad, consolidando una trayectoria de financiarización globalizada sin retorno al modelo tradicional.
+A través del mapa bidimensional, se devela la existencia de senderos evolutivos dependientes de la trayectoria (*path dependency*) de cada liga:
 
-### Tratamiento de Datos Composicionales (CoDa)
-
-Las proporciones de la matriz de Ownership Landscape son datos composicionales por definición (suman 1.0 y están acotados en el espacio simplex). En consecuencia, de acuerdo con la teoría metodológica contemporánea para el análisis de datos composicionales (Pawlowsky-Glahn et al., 2015), se aplican dos aproximaciones metodológicas para asegurar la robustez estadística:
-
-* **Enfoque de Referencia (Conventional PCA)**: Se realiza el PCA convencional sobre las proporciones estandarizadas para mantener la legibilidad directa de las distancias euclidianas simples de las proporciones.
-* **Enfoque de Sensibilidad (Compositional PCA)**: Se aplica una transformación **Centered Log-Ratio (CLR)** sobre las proporciones (añadiendo una constante residual de $1\times 10^{-5}$ a las proporciones nulas para evitar indeterminaciones matemáticas de logaritmos) antes de realizar el PCA (Pawlowsky-Glahn et al., 2015). El CLR proyecta los datos fuera del simplex para evitar problemas de correlación espuria e inducir ortogonalidad real. Los resultados y la ordenación espacial de ambos análisis se contrastan y verifican en las pruebas de sensibilidad.
+*   **Bundesliga (Estabilidad Absoluta en el Cuadrante III)**: Inmóvil en la esquina inferior izquierda del plano (PC1 $\approx -3.3$ y PC2 subiendo ligeramente de $-1.18$ a $-0.51$). Esto demuestra la extraordinaria efectividad institucional de la regla del 50+1 como blindaje contra la entrada de capital de riesgo y la multipropiedad transnacional, manteniendo su landscape bajo el modelo tradicional democrático y uniclub.
+*   **LaLiga (Oscilación entre los Cuadrantes II y III)**: Se desplaza exclusivamente en la mitad izquierda del plano (PC1 siempre negativo), oscilando entre el Cuadrante II y el Cuadrante III. Inicia en 2019 en el Cuadrante II ($y = +0.21$), cae al Cuadrante III en 2020-2021 (alcanzando su punto más bajo en $y = -0.50$ debido al ascenso de clubes tradicionales), y retorna al Cuadrante II en 2024 ($y = +0.17$). Sus clubes de socios actúan como un ancla estructural a la izquierda, preservando su carácter híbrido y socialmente arraigado.
+*   **Premier League (Trayectoria en los Cuadrantes II y I)**: Se mantiene de forma persistente en la parte superior del plano (PC2 > 2.1) debido a su altísima tasa de multipropiedad, oscilando en el límite vertical ($PC1=0$) entre el Cuadrante II y el Cuadrante I. Termina en 2024 consolidada en el Cuadrante I ($x \approx 0.0, y = 2.62$). Representa la financiarización globalizada sin retorno, combinando propiedad transnacional con control corporativo en red.
+*   **Serie A (Ascenso dentro del Cuadrante IV)**: Se ubica firmemente de principio a fin en el Cuadrante IV (PC1 > 2.0, PC2 < 0), pero muestra una clara trayectoria ascendente (subiendo desde $y = -1.55$ en 2019 hasta $y = -0.36$ en 2024). Esto refleja cómo el capital nacional tradicional está siendo reemplazado progresivamente por fondos de inversión internacionales (que inyectan capital comercial, elevando el PC2 de la liga) y ascensos de clubes bajo modelos privados corporativos.
+*   **Ligue 1 (Cruces Dinámicos entre los Cuadrantes I y IV)**: Es la liga con las oscilaciones más marcadas del estudio. Inicia profundamente en el Cuadrante IV en 2019 ($y \approx -1.90$), asciende al Cuadrante I en 2022 ($y = +0.44$), desciende al Cuadrante IV en 2023, y en 2024 vuelve a cruzar levemente al Cuadrante I ($y = +0.03$). Refleja la inestabilidad de las finanzas francesas, con compras recurrentes de clubes y oscilaciones entre MCO transnacionales y privatizaciones de cartera individual.
 
 ---
+
+### 6.4. Tratamiento de Datos Composicionales (CoDa)
+
+Las proporciones de la matriz de Ownership Landscape son datos composicionales por definición (suman 1.0 y están acotados en el espacio simplex). En consecuencia, de acuerdo con la teoría metodológica contemporánea para el análisis de datos composicionales (Pawlowsky-Glahn et al., 2015), se aplican dos aproximaciones metodológicas para asegurar la robustez estadística:
+* **Enfoque de Referencia (Conventional PCA)**: Se realiza el PCA convencional sobre las proporciones estandarizadas para mantener la legibilidad directa de las distancias euclidianas simples de las proporciones.
+* **Enfoque de Sensibilidad (Compositional PCA)**: Se aplica una transformación **Centered Log-Ratio (CLR)** sobre las proporciones (añadiendo una constante residual de $1\times 10^{-5}$ a las proporciones nulas para evitar indeterminaciones matemáticas de logaritmos) antes de realizar el PCA (Pawlowsky-Glahn et al., 2015). El CLR proyécta los datos fuera del simplex para evitar problemas de correlación espuria e inducir ortogonalidad real. Los resultados y la ordenación espacial de ambos análisis se contrastan y verifican en las pruebas de sensibilidad.
+
 
 ## 7. Sensibilidad, Robustez y Reproducibilidad
 
 Para validar la solidez metodológica de los resultados descriptivos y configuracionales obtenidos, se implementaron las siguientes pruebas de robustez:
 
-* **PCA Convencional vs. Composicional (CLR)**: Se correlacionaron las puntuaciones de las 30 observaciones liga-temporada obtenidas mediante ambos enfoques. La correlación de rango de Spearman para el primer componente principal (PC1, el Eje de Internacionalización y Financiarización) superó el **$0.96$** en valor absoluto. Esto confirma de forma empírica que el eje principal de diferenciación e internacionalización de las ligas es sumamente estable y robusto, no viéndose afectado por la constricción de suma constante del simplex composicional (Pawlowsky-Glahn et al., 2015).
+* **PCA Convencional vs. Composicional (CLR)**: Se correlacionaron las puntuaciones de las 30 observaciones liga-temporada obtenidas mediante ambos enfoques. La correlación de Pearson para el primer componente principal (PC1, el Eje de Internacionalización y Financiarización) entre ambos enfoques superó el **$0.96$** en valor absoluto (con una correlación de rango de Spearman de **$0.88$**). Esto confirma de forma empírica que el eje principal de diferenciación e internacionalización de las ligas es sumamente estable y robusto, no viéndose afectado por la constricción de suma constante del simplex composicional (Pawlowsky-Glahn et al., 2015).
 * **Estabilidad sin la Categoría "Unknown"**: Se repitió el PCA tras excluir la proporción `unknown` y re-normalizar las restantes 7 categorías sustantivas a $1.0$ mediante la fórmula $p'_{i} = p_{i} / (1 - p_{unknown})$. La comparación geométrica de la posición relativa de las 30 observaciones liga-temporada en el plano bidimensional arrojó una correlación de Procrustes del **$0.985$**, validando rigurosamente que la presencia de datos no resueltos no introduce sesgos ni afecta la validez configuracional del estudio.
 
 ### Reproducibilidad e Infraestructura de Software
