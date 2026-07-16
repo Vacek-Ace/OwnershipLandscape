@@ -42,7 +42,7 @@ To accurately reflect the real market structure of each season, the panel is con
 3. **Integration**: Each club-season observation is associated with its corresponding ownership classification for that year.
 
 The resulting final sample of the panel comprises:
-* **176 unique clubs**.
+* **137 unique clubs**.
 * **584 club-season observations** (used to characterize micro behavior and baseline distributions).
 * **30 league-season observations** (the 30 macro configurations analyzed: 5 leagues $	imes$ 6 transition years/seasons between 2019 and 2024).
 

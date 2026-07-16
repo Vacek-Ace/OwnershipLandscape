@@ -53,7 +53,7 @@ Para reflejar fielmente la estructura real del mercado de cada temporada, el pan
 
 La muestra final resultante del panel comprende:
 
-* **176 clubes únicos**.
+* **137 clubes únicos**.
 * **584 observaciones a nivel club-temporada** (utilizadas para caracterizar el comportamiento micro y las distribuciones de base).
 * **30 observaciones a nivel liga-temporada** (las 30 configuraciones macro analizadas: 5 ligas $\times$ 6 años/temporadas de transición entre 2019 y 2024).
 
