@@ -1,0 +1,120 @@
+==================================================================
+1. CUANTIFICACIÓN EXHAUSTIVA DE 'UNKNOWN' POR LIGA Y TEMPORADA
+==================================================================
+Total observaciones club-temporada: 584
+Total observaciones 'unknown': 8 (1.37% de la muestra total)
+Total observaciones resueltas (K=7): 576 (98.63% de la muestra total)
+
+--- Conteo de Clubes 'Unknown' por Liga y Temporada ---
+league  Bundesliga  LaLiga  Ligue 1  Premier League  Serie A
+season                                                      
+2019             1       0        1               0        1
+2020             1       0        1               0        0
+2021             1       0        1               0        0
+2022             1       0        0               0        0
+2023             0       0        0               0        0
+2024             0       0        0               0        0
+
+--- Porcentaje de 'Unknown' sobre el Total de la Liga (%) ---
+league  Bundesliga  LaLiga  Ligue 1  Premier League  Serie A
+season                                                      
+2019          5.56     0.0      5.0             0.0      5.0
+2020          5.56     0.0      5.0             0.0      0.0
+2021          5.56     0.0      5.0             0.0      0.0
+2022          5.56     0.0      0.0             0.0      0.0
+2023          0.00     0.0      0.0             0.0      0.0
+2024          0.00     0.0      0.0             0.0      0.0
+
+--- Detalle de los 8 Casos 'Unknown' en el Panel ---
+ season     league  club_id             club_name ultimate_owner         owner_type
+   2019 Bundesliga       44            Hertha BSC        unknown            unknown
+   2020 Bundesliga       44            Hertha BSC        unknown            unknown
+   2021 Bundesliga       44            Hertha BSC        unknown            unknown
+   2022 Bundesliga       44            Hertha BSC        unknown            unknown
+   2019    Ligue 1     2969             Dijon FCO        unknown            unknown
+   2020    Ligue 1     2969             Dijon FCO        unknown            unknown
+   2021    Ligue 1       40 FC Girondins Bordeaux   Gerard Lopez private individual
+   2019    Serie A     2722                  SPAL        unknown            unknown
+
+==================================================================
+2. AUDITORÍA COMPLETA DE TODOS LOS RESULTADOS DEL LANDSCAPE (K=7)
+==================================================================
+
+--- Tabla de Proporciones 2024 (K=7) ---
+
+>> Bundesliga (N_sub=18, N_total=18):
+   - member-owned: 66.7% (12 clubes)
+   - domestic private: 5.6% (1 clubes)
+   - foreign private: 0.0% (0 clubes)
+   - investment fund: 0.0% (0 clubes)
+   - hybrid: 16.7% (3 clubes)
+   - corporate-MCO: 5.6% (1 clubes)
+   - state-linked: 5.6% (1 clubes)
+
+>> LaLiga (N_sub=20, N_total=20):
+   - member-owned: 20.0% (4 clubes)
+   - domestic private: 25.0% (5 clubes)
+   - foreign private: 20.0% (4 clubes)
+   - investment fund: 5.0% (1 clubes)
+   - hybrid: 15.0% (3 clubes)
+   - corporate-MCO: 10.0% (2 clubes)
+   - state-linked: 5.0% (1 clubes)
+
+>> Ligue 1 (N_sub=18, N_total=18):
+   - member-owned: 0.0% (0 clubes)
+   - domestic private: 38.9% (7 clubes)
+   - foreign private: 27.8% (5 clubes)
+   - investment fund: 16.7% (3 clubes)
+   - hybrid: 0.0% (0 clubes)
+   - corporate-MCO: 11.1% (2 clubes)
+   - state-linked: 5.6% (1 clubes)
+
+>> Premier League (N_sub=20, N_total=20):
+   - member-owned: 0.0% (0 clubes)
+   - domestic private: 15.0% (3 clubes)
+   - foreign private: 20.0% (4 clubes)
+   - investment fund: 15.0% (3 clubes)
+   - hybrid: 15.0% (3 clubes)
+   - corporate-MCO: 25.0% (5 clubes)
+   - state-linked: 10.0% (2 clubes)
+
+>> Serie A (N_sub=20, N_total=20):
+   - member-owned: 0.0% (0 clubes)
+   - domestic private: 45.0% (9 clubes)
+   - foreign private: 30.0% (6 clubes)
+   - investment fund: 10.0% (2 clubes)
+   - hybrid: 5.0% (1 clubes)
+   - corporate-MCO: 10.0% (2 clubes)
+   - state-linked: 0.0% (0 clubes)
+
+--- Métricas Longitudinales (2019 vs 2024) ---
+
+>> Bundesliga:
+   - Entropía (H): 1.119 (2019) -> 1.051 (2024)
+   - HHI: 0.453 (2019) -> 0.481 (2024)
+   - MCO Rate: 5.6% (2019) -> 5.6% (2024)
+   - State Link Rate: 5.6% (2019) -> 5.6% (2024)
+
+>> LaLiga:
+   - Entropía (H): 1.636 (2019) -> 1.805 (2024)
+   - HHI: 0.210 (2019) -> 0.180 (2024)
+   - MCO Rate: 20.0% (2019) -> 25.0% (2024)
+   - State Link Rate: 0.0% (2019) -> 5.0% (2024)
+
+>> Ligue 1:
+   - Entropía (H): 1.016 (2019) -> 1.426 (2024)
+   - HHI: 0.501 (2019) -> 0.272 (2024)
+   - MCO Rate: 10.0% (2019) -> 27.8% (2024)
+   - State Link Rate: 5.0% (2019) -> 5.6% (2024)
+
+>> Premier League:
+   - Entropía (H): 1.483 (2019) -> 1.752 (2024)
+   - HHI: 0.245 (2019) -> 0.180 (2024)
+   - MCO Rate: 50.0% (2019) -> 60.0% (2024)
+   - State Link Rate: 5.0% (2019) -> 10.0% (2024)
+
+>> Serie A:
+   - Entropía (H): 0.766 (2019) -> 1.331 (2024)
+   - HHI: 0.540 (2019) -> 0.315 (2024)
+   - MCO Rate: 10.0% (2019) -> 30.0% (2024)
+   - State Link Rate: 0.0% (2019) -> 0.0% (2024)
