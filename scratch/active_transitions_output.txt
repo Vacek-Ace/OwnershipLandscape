@@ -1,0 +1,279 @@
+Total active club-season rows: 584
+Active clubs with control changes: 44
+Events for active clubs with control change: 56
+
+--- Club 5: Associazione Calcio Milan (Serie A) ---
+  Start owner (2019): Elliott Management
+  End owner (2025): RedBird Capital Partners
+  Final ownership model in dataset: investment fund
+    Event: Date=2022-08-31 00:00:00, Buyer=RedBird Capital Partners, Seller=Elliott Management, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 12: Associazione Sportiva Roma (Serie A) ---
+  Start owner (2019): James Pallotta
+  End owner (2025): The Friedkin Group
+  Final ownership model in dataset: corporate-MCO
+    Event: Date=2020-08-17 00:00:00, Buyer=The Friedkin Group, Seller=James Pallotta-led AS Roma SPV, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 29: Everton Football Club (Premier League) ---
+  Start owner (2019): Farhad Moshiri
+  End owner (2025): The Friedkin Group
+  Final ownership model in dataset: corporate-MCO
+    Event: Date=NaT, Buyer=777 Partners, Seller=Farhad Moshiri, ChangeControl=No, Status=cancelled, Type=Proposed takeover
+    Event: Date=2024-12-19 00:00:00, Buyer=The Friedkin Group / Roundhouse Capital Holdings, Seller=Farhad Moshiri / Blue Heaven Holdings, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 40: FC Girondins Bordeaux (Ligue 1) ---
+  Start owner (2019): King Street-controlled structure
+  End owner (2025): Gerard Lopez
+  Final ownership model in dataset: unknown
+    Event: Date=2021-07-23 00:00:00, Buyer=Gerard Lopez / Jogo Bonito, Seller=King Street / Fortress-related creditors, ChangeControl=Yes, Status=completed, Type=Rescue acquisition / takeover
+    Event: Date=NaT, Buyer=Fenway Sports Group, Seller=Gerard Lopez, ChangeControl=No, Status=cancelled, Type=Proposed takeover
+
+--- Club 46: Football Club Internazionale Milano S.p.A. (Serie A) ---
+  Start owner (2019): Suning / Zhang family
+  End owner (2025): Oaktree Capital Management
+  Final ownership model in dataset: investment fund
+    Event: Date=2024-05-22 00:00:00, Buyer=Oaktree Capital Management, Seller=Suning / Great Horizon after loan default, ChangeControl=Yes, Status=completed, Type=Enforcement of share pledge / takeover
+
+--- Club 130: Parma Calcio 1913 (Serie A) ---
+  Start owner (2019): Nuovo Inizio-led local group
+  End owner (2025): Krause Group / Kyle Krause
+  Final ownership model in dataset: foreign private
+    Event: Date=2020-09-18 00:00:00, Buyer=Krause Group / Kyle Krause, Seller=Nuovo Inizio and local shareholders, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 180: Southampton FC (Premier League) ---
+  Start owner (2019): Gao Jisheng
+  End owner (2025): Sport Republic
+  Final ownership model in dataset: investment fund
+    Event: Date=2022-01-04 00:00:00, Buyer=Sport Republic, Seller=Gao Jisheng, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 237: Real Club Deportivo Mallorca S.A.D. (LaLiga) ---
+  Start owner (2019): Robert Sarver-led ownership group
+  End owner (2025): Andy Kohlberg-led ownership group
+  Final ownership model in dataset: foreign private
+    Event: Date=2023-08-22 00:00:00, Buyer=Andy Kohlberg / Mallorca ownership group, Seller=Robert Sarver, ChangeControl=Yes, Status=completed, Type=Share acquisition / internal control transfer
+    Event: Date=2023-08-22 00:00:00, Buyer=Steve Kerr, Seller=Existing Mallorca shareholders, ChangeControl=No, Status=completed, Type=Minority investment
+
+--- Club 252: Genoa Cricket and Football Club (Serie A) ---
+  Start owner (2019): Enrico Preziosi
+  End owner (2025): Dan Sucu
+  Final ownership model in dataset: foreign private
+    Event: Date=2021-09-23 00:00:00, Buyer=777 Partners, Seller=Enrico Preziosi, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+    Event: Date=2024-12-18 00:00:00, Buyer=Dan Sucu, Seller=777 Partners / A-CAP-related interests, ChangeControl=Yes, Status=completed, Type=Capital increase / takeover
+
+--- Club 276: Verona Hellas Football Club (Serie A) ---
+  Start owner (2019): Maurizio Setti
+  End owner (2025): Presidio Investors
+  Final ownership model in dataset: investment fund
+    Event: Date=2025-01-15 00:00:00, Buyer=Presidio Investors, Seller=Maurizio Setti, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 350: Sheffield United (Premier League) ---
+  Start owner (2019): Prince Abdullah / United World
+  End owner (2025): COH Sports
+  Final ownership model in dataset: foreign private
+    Event: Date=2024-12-23 00:00:00, Buyer=COH Sports, Seller=Prince Abdullah / United World, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 366: Real Valladolid CF (LaLiga) ---
+  Start owner (2019): Ronaldo Nazario
+  End owner (2025): Ignite Sports Ventures / Gabriel Solares-led group
+  Final ownership model in dataset: foreign private
+    Event: Date=2025-06-26 00:00:00, Buyer=Ignite Sports Ventures and Ben Oldman Partners, Seller=Ronaldo Nazario, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 380: US Salernitana 1919 (Serie A) ---
+  Start owner (2019): Claudio Lotito and Marco Mezzaroma interests
+  End owner (2025): Danilo Iervolino
+  Final ownership model in dataset: domestic private
+    Event: Date=2022-01-10 00:00:00, Buyer=Danilo Iervolino, Seller=Trustees for Lotito-Mezzaroma ownership, ChangeControl=Yes, Status=completed, Type=Trust sale / takeover
+
+--- Club 399: Leeds United Association Football Club (Premier League) ---
+  Start owner (2019): Andrea Radrizzani / Aser Ventures
+  End owner (2025): 49ers Enterprises
+  Final ownership model in dataset: foreign private
+    Event: Date=2023-07-17 00:00:00, Buyer=49ers Enterprises, Seller=Andrea Radrizzani / Aser Ventures, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 415: Toulouse Football Club (Ligue 1) ---
+  Start owner (2019): Olivier Sadran
+  End owner (2025): RedBird Capital Partners
+  Final ownership model in dataset: investment fund
+    Event: Date=2020-07-20 00:00:00, Buyer=RedBird Capital Partners, Seller=Olivier Sadran, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 417: Olympique Gymnaste Club Nice Côte d'Azur (Ligue 1) ---
+  Start owner (2019): Chien Lee-Alex Zheng-led consortium
+  End owner (2025): INEOS / Jim Ratcliffe
+  Final ownership model in dataset: corporate-MCO
+    Event: Date=2019-08-26 00:00:00, Buyer=INEOS / Jim Ratcliffe, Seller=Chien Lee-Alex Zheng-led consortium, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+    Event: Date=2024-07-05 00:00:00, Buyer=Independent trustee under UEFA-supervised blind trust, Seller=INEOS, ChangeControl=No, Status=completed, Type=Temporary blind-trust governance arrangement
+
+--- Club 430: Associazione Calcio Fiorentina (Serie A) ---
+  Start owner (2019): Della Valle family
+  End owner (2025): Rocco B. Commisso / Mediacom
+  Final ownership model in dataset: foreign private
+    Event: Date=2019-06-06 00:00:00, Buyer=Rocco B. Commisso, Seller=Della Valle family, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 533: Turn- und Sportgemeinschaft 1899 Hoffenheim Fußball-Spielbetriebs (Bundesliga) ---
+  Start owner (2019): Dietmar Hopp
+  End owner (2025): TSG 1899 Hoffenheim e.V. (voting control); Dietmar Hopp retained major economic stake
+  Final ownership model in dataset: hybrid
+    Event: Date=2023-11-29 00:00:00, Buyer=TSG 1899 Hoffenheim e.V., Seller=Dietmar Hopp, ChangeControl=Yes, Status=completed, Type=Voting-rights transfer / restoration of 50+1
+
+--- Club 607: Venezia FC (Serie A) ---
+  Start owner (2019): Joe Tacopina-led group
+  End owner (2025): Duncan Niederauer-led group
+  Final ownership model in dataset: foreign private
+    Event: Date=2020-02-18 00:00:00, Buyer=VFC Newco / Duncan Niederauer-led investor group, Seller=Joe Tacopina, ChangeControl=Yes, Status=completed, Type=Share acquisition / control consolidation
+
+--- Club 618: AS Saint-Étienne (Ligue 1) ---
+  Start owner (2019): Roland Romeyer and Bernard Caiazzo
+  End owner (2025): Kilmer Sports Ventures / Larry Tanenbaum
+  Final ownership model in dataset: foreign private
+    Event: Date=2024-06-03 00:00:00, Buyer=Kilmer Sports Ventures / Larry Tanenbaum, Seller=Roland Romeyer and Bernard Caiazzo, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 631: Chelsea Football Club (Premier League) ---
+  Start owner (2019): Roman Abramovich
+  End owner (2025): BlueCo / Clearlake Capital-led consortium
+  Final ownership model in dataset: investment fund
+    Event: Date=2022-05-30 00:00:00, Buyer=BlueCo / Clearlake-Boehly consortium, Seller=Roman Abramovich, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 667: Racing Club de Strasbourg Alsace (Ligue 1) ---
+  Start owner (2019): Marc Keller-led local shareholder group
+  End owner (2025): BlueCo
+  Final ownership model in dataset: investment fund
+    Event: Date=2023-06-22 00:00:00, Buyer=BlueCo, Seller=Marc Keller-led local shareholder group, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 677: Ipswich Town (Premier League) ---
+  Start owner (2019): Marcus Evans
+  End owner (2025): Gamechanger 20 / ORG-led group
+  Final ownership model in dataset: investment fund
+    Event: Date=2021-04-07 00:00:00, Buyer=Gamechanger 20 Ltd / ORG-led group, Seller=Marcus Evans, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+    Event: Date=2024-03-22 00:00:00, Buyer=Bright Path Sports Partners, Seller=Existing shareholders / new issue, ChangeControl=No, Status=completed, Type=Material minority investment
+
+--- Club 714: Reial Club Deportiu Espanyol de Barcelona S.A.D. (LaLiga) ---
+  Start owner (2019): Rastar Group / Chen Yansheng
+  End owner (2025): Velocity Sports Partners / ALK Capital
+  Final ownership model in dataset: investment fund
+    Event: Date=2025-10-09 00:00:00, Buyer=Velocity Sports Partners / ALK Capital, Seller=Rastar Group / Chen Yansheng, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 738: Le Havre Athletic Club (Ligue 1) ---
+  Start owner (2019): Vincent Volpe
+  End owner (2025): Blue Crow Sports Group
+  Final ownership model in dataset: foreign private
+    Event: Date=2025-06-27 00:00:00, Buyer=Blue Crow Sports Group, Seller=Vincent Volpe, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 762: Newcastle United Football Club (Premier League) ---
+  Start owner (2019): Mike Ashley
+  End owner (2025): PIF-led consortium
+  Final ownership model in dataset: state-linked
+    Event: Date=2021-10-07 00:00:00, Buyer=PIF-led consortium, Seller=Mike Ashley / St James Holdings, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+    Event: Date=2024-07-11 00:00:00, Buyer=PIF and Reuben Brothers, Seller=PCP Capital Partners / Amanda Staveley, ChangeControl=No, Status=completed, Type=Minority exit / ownership consolidation
+
+--- Club 800: Atalanta Bergamasca Calcio S.p.a. (Serie A) ---
+  Start owner (2019): Percassi family
+  End owner (2025): Stephen Pagliuca-led consortium with Percassi family
+  Final ownership model in dataset: hybrid
+    Event: Date=2022-02-19 00:00:00, Buyer=Stephen Pagliuca-led investor group, Seller=Percassi family, ChangeControl=Yes, Status=completed, Type=Holding-company majority acquisition / takeover
+
+--- Club 984: West Bromwich Albion (Premier League) ---
+  Start owner (2019): Guochuan Lai
+  End owner (2025): Shilen and Kiran Patel / Bilkul Football WBA
+  Final ownership model in dataset: foreign private
+    Event: Date=2024-02-28 00:00:00, Buyer=Bilkul Football WBA / Shilen and Kiran Patel, Seller=Guochuan Lai / Yunyi Guokai, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 989: Association Football Club Bournemouth (Premier League) ---
+  Start owner (2019): Maxim Demin
+  End owner (2025): Black Knight Football Club / Bill Foley
+  Final ownership model in dataset: corporate-MCO
+    Event: Date=2022-12-13 00:00:00, Buyer=Black Knight Football Club / Bill Foley, Seller=Maxim Demin, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 1038: UC Sampdoria (Serie A) ---
+  Start owner (2019): Massimo Ferrero-related structure
+  End owner (2025): Gestio Capital / Matteo Manfredi-led structure
+  Final ownership model in dataset: investment fund
+    Event: Date=2023-05-31 00:00:00, Buyer=Gestio Capital-led consortium / Matteo Manfredi and Andrea Radrizzani, Seller=Massimo Ferrero / Sport Spettacolo Holding / trust structure, ChangeControl=Yes, Status=completed, Type=Rescue capital increase / takeover
+
+--- Club 1041: Olympique Lyonnais (Ligue 1) ---
+  Start owner (2019): Jean-Michel Aulas / Holnest-led structure
+  End owner (2025): Eagle Football / John Textor
+  Final ownership model in dataset: corporate-MCO
+    Event: Date=2022-12-19 00:00:00, Buyer=Eagle Football / John Textor, Seller=Pathe, IDG Capital and Holnest-related shareholders, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 1047: Calcio Como (Serie A) ---
+  Start owner (2019): Previous local ownership
+  End owner (2025): SENT Entertainment / Hartono family
+  Final ownership model in dataset: corporate-MCO
+    Event: Date=2019-04-04 00:00:00, Buyer=SENT Entertainment / Hartono family, Seller=Previous Como shareholder structure, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 1082: Lille Olympique Sporting Club (Ligue 1) ---
+  Start owner (2019): Gerard Lopez
+  End owner (2025): Merlyn Partners
+  Final ownership model in dataset: investment fund
+    Event: Date=2020-12-18 00:00:00, Buyer=Callisto Sporting / Merlyn Partners, Seller=Gerard Lopez / Victory Soccer, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 1095: ESTAC Troyes (Ligue 1) ---
+  Start owner (2019): Daniel Masoni
+  End owner (2025): City Football Group
+  Final ownership model in dataset: state-linked
+    Event: Date=2020-09-02 00:00:00, Buyer=City Football Group, Seller=Daniel Masoni, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 1123: Norwich City (Premier League) ---
+  Start owner (2019): Delia Smith and Michael Wynn-Jones
+  End owner (2025): Norfolk Holdings / Mark Attanasio
+  Final ownership model in dataset: hybrid
+    Event: Date=2024-10-23 00:00:00, Buyer=Norfolk Holdings / Mark Attanasio, Seller=Delia Smith and Michael Wynn-Jones / existing shareholders, ChangeControl=Yes, Status=completed, Type=Recapitalisation / control transfer
+
+--- Club 1132: Burnley Football Club (Premier League) ---
+  Start owner (2019): Mike Garlick
+  End owner (2025): ALK Capital / Velocity Sports Partners
+  Final ownership model in dataset: investment fund
+    Event: Date=2020-12-31 00:00:00, Buyer=ALK Capital / Velocity Sports Partners, Seller=Mike Garlick and existing shareholders, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 1244: CD Leganés (LaLiga) ---
+  Start owner (2019): Moreno Pavon family
+  End owner (2025): Blue Crow Sports Group
+  Final ownership model in dataset: corporate-MCO
+    Event: Date=2022-06-23 00:00:00, Buyer=Blue Crow Sports Group, Seller=Moreno Pavon family, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 1531: Elche Club de Fútbol S.A.D. (LaLiga) ---
+  Start owner (2019): Jose Sepulcre-led structure
+  End owner (2025): Christian Bragarnik
+  Final ownership model in dataset: foreign private
+    Event: Date=2019-12-03 00:00:00, Buyer=Score Club 2019 / Christian Bragarnik, Seller=Jose Sepulcre / Tenama Inversiones, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 2722: SPAL (Serie A) ---
+  Start owner (2019): Colombarini family
+  End owner (2025): Juan Martin Molinari-led consortium (sporting successor)
+  Final ownership model in dataset: unknown
+    Event: Date=2021-08-13 00:00:00, Buyer=Joe Tacopina, Seller=Colombarini family, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+    Event: Date=2024-01-02 00:00:00, Buyer=Marcello Follano / Tacollano Holdings, Seller=Joe Tacopina / existing holding, ChangeControl=No, Status=completed, Type=Minority co-investment / holding reorganisation
+    Event: Date=2025-07-11 00:00:00, Buyer=Juan Martin Molinari-led consortium / Ars et Labor Ferrara, Seller=Liquidating SPAL Srl / municipal award process, ChangeControl=Uncertain, Status=completed, Type=Insolvency / refoundation / sporting-right award
+
+--- Club 2919: AC Monza (Serie A) ---
+  Start owner (2019): Fininvest / Berlusconi family
+  End owner (2025): Beckett Layne Ventures
+  Final ownership model in dataset: investment fund
+    Event: Date=2025-09-25 00:00:00, Buyer=Beckett Layne Ventures, Seller=Fininvest / Berlusconi family, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 2969: Dijon FCO (Ligue 1) ---
+  Start owner (2019): Olivier Delcourt
+  End owner (2025): Pierre-Henri Deballon
+  Final ownership model in dataset: unknown
+    Event: Date=2024-07-02 00:00:00, Buyer=Pierre-Henri Deballon, Seller=Olivier Delcourt, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 3302: UD Almería (LaLiga) ---
+  Start owner (2019): Alfonso Garcia
+  End owner (2025): SMC Group / Mohamed Al-Khereiji
+  Final ownership model in dataset: state-linked
+    Event: Date=2019-08-02 00:00:00, Buyer=Turki Al-Sheikh, Seller=Alfonso Garcia, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+    Event: Date=2025-05-16 00:00:00, Buyer=SMC Group / Mohamed Al-Khereiji, Seller=Turki Al-Sheikh, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 3522: Spezia Calcio (Serie A) ---
+  Start owner (2019): Gabriele Volpi
+  End owner (2025): RAM Spezia Holdings / Thomas Roberts
+  Final ownership model in dataset: foreign private
+    Event: Date=2021-02-11 00:00:00, Buyer=Platek family / Westchester South Investments, Seller=Gabriele Volpi / Orlean Invest, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+    Event: Date=2025-02-08 00:00:00, Buyer=FC32, Seller=Platek family / Westchester South Investments, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+    Event: Date=2025-04-23 00:00:00, Buyer=RAM Spezia Holdings / Thomas Roberts, Seller=FC32, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover
+
+--- Club 3524: Clermont Foot 63 (Ligue 1) ---
+  Start owner (2019): Claude Michy
+  End owner (2025): Ahmet Schaefer / Core Sports Capital
+  Final ownership model in dataset: investment fund
+    Event: Date=2019-03-13 00:00:00, Buyer=Core Sports Capital / Ahmet Schaefer, Seller=Claude Michy, ChangeControl=Yes, Status=completed, Type=Share acquisition / takeover

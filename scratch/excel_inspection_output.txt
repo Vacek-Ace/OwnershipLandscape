@@ -1,0 +1,177 @@
+=== SHEET OVERVIEW ===
+
+--- Sheet: Ownership_Dataset ---
+Shape preview (first 5 rows): (5, 13)
+Columns (13): ['club_id', 'club_name', 'ultimate_owner', 'owner_country', 'owner_origin', 'owner_type', 'state_link', 'mco', 'mco_group', 'ownership_model', 'source', 'confidence', 'notes']
+
+--- Sheet: Method_Notes ---
+Shape preview (first 5 rows): (5, 2)
+Columns (2): ['Field', 'Content']
+
+--- Sheet: Summary ---
+Shape preview (first 5 rows): (5, 2)
+Columns (2): ['Metric', 'Value']
+
+--- Sheet: Input_Clubs ---
+Shape preview (first 5 rows): (5, 7)
+Columns (7): ['club_id', 'club_name', 'league_id', 'league_name', 'first_season', 'last_season', 'n_rows_in_template']
+
+--- Sheet: Ownership summary ---
+Shape preview (first 5 rows): (5, 16)
+Columns (16): ['Club ID', 'Club', 'País', 'Liga', 'Propietario último al inicio del periodo', 'Propietario último al final del periodo', 'Cambio de control', 'Número de cambios de control', 'Fecha del cambio o cambios', 'Adquisición minoritaria relevante', 'Tipo de operación', 'Breve explicación', 'Nivel de confianza', 'Fuente principal', 'Fuente secundaria', 'Observaciones']
+
+--- Sheet: Ownership events ---
+Shape preview (first 5 rows): (5, 16)
+Columns (16): ['Club ID', 'Club', 'Fecha de anuncio', 'Fecha de aprobación', 'Fecha de cierre', 'Vendedor', 'Comprador', 'Porcentaje adquirido', 'Propietario último anterior', 'Propietario último posterior', 'Tipo de operación', '¿Produjo cambio de control?', 'Estado', 'Fuente principal', 'Fuente secundaria', 'Observaciones']
+
+--- Sheet: Research log ---
+Shape preview (first 5 rows): (5, 7)
+Columns (7): ['Club ID', 'Club investigado', 'Estado de la búsqueda', 'Fuentes consultadas', 'Problemas de identificación', 'Información pendiente o contradictoria', 'Nota de auditoría']
+
+
+=== DETAILED ANALYSIS OF KEY SHEETS ===
+
+==========================================
+SHEET: Ownership_Dataset (Total rows: 176)
+Columns: ['club_id', 'club_name', 'ultimate_owner', 'owner_country', 'owner_origin', 'owner_type', 'state_link', 'mco', 'mco_group', 'ownership_model', 'source', 'confidence', 'notes']
+
+Head(3):
+   club_id                  club_name                         ultimate_owner  owner_country  owner_origin       owner_type  state_link  mco                  mco_group  ownership_model                                                                                                                   source confidence                                                                                                           notes
+0        3       1. Fußball-Club Köln  Club members / registered association        Germany  member-owned     member-owned           0    0                        NaN     member-owned  https://www.bundesliga.com/en/bundesliga/news/50-1-fifty-plus-one-german-football-soccer-rule-explained-ownership-22832     medium  Coded as member-controlled under Bundesliga 50+1 rule; verify subsidiary equity if used for fine-grained work.
+1        4             1.FC Nuremberg  Club members / registered association        Germany  member-owned     member-owned           0    0                        NaN     member-owned  https://www.bundesliga.com/en/bundesliga/news/50-1-fifty-plus-one-german-football-soccer-rule-explained-ownership-22832     medium  Coded as member-controlled under Bundesliga 50+1 rule; verify subsidiary equity if used for fine-grained work.
+2        5  Associazione Calcio Milan               RedBird Capital Partners  United States       foreign  investment fund           0    1  RedBird football holdings  investment fund                                                   https://en.wikipedia.org/wiki/List_of_owners_of_Italian_football_clubs       high                                                          RedBird ownership; MCO marked due Toulouse/Milan link.
+
+Null counts / Unique values:
+  club_id: 176 unique, 0 nulls
+  club_name: 176 unique, 0 nulls
+  ultimate_owner: 135 unique, 0 nulls
+  owner_country: 46 unique, 0 nulls
+  owner_origin: 5 unique, 0 nulls
+  owner_type: 8 unique, 0 nulls
+  state_link: 3 unique, 0 nulls
+  mco: 2 unique, 0 nulls
+  mco_group: 36 unique, 131 nulls
+  ownership_model: 8 unique, 0 nulls
+  source: 93 unique, 0 nulls
+  confidence: 3 unique, 0 nulls
+  notes: 139 unique, 0 nulls
+
+==========================================
+SHEET: Method_Notes (Total rows: 9)
+Columns: ['Field', 'Content']
+
+Head(3):
+            Field                                                                                                                                                                                          Content
+0         Created                                                                                                                                                                                 2026-06-15 10:51
+1  Input handling  The uploaded template had 1,206 club-season rows and 176 unique club_id values. Because the requested output columns did not include season, the output is deduplicated by club_id / club_name.
+2  Temporal scope              This is a current/public-source ownership coding, not a season-by-season historical ownership panel. For longitudinal analysis, ownership changes should be time-stamped by season.
+
+Null counts / Unique values:
+  Field: 9 unique, 0 nulls
+  Content: 9 unique, 0 nulls
+
+==========================================
+SHEET: Summary (Total rows: 8)
+Columns: ['Metric', 'Value']
+
+Head(3):
+               Metric  Value
+0  Unique clubs coded    176
+1     High confidence     82
+2   Medium confidence     79
+
+Null counts / Unique values:
+  Metric: 8 unique, 0 nulls
+  Value: 8 unique, 0 nulls
+
+==========================================
+SHEET: Input_Clubs (Total rows: 176)
+Columns: ['club_id', 'club_name', 'league_id', 'league_name', 'first_season', 'last_season', 'n_rows_in_template']
+
+Head(3):
+   club_id                  club_name league_id league_name  first_season  last_season  n_rows_in_template
+0        3       1. Fußball-Club Köln        L1  Bundesliga          2019         2025                   7
+1        4             1.FC Nuremberg        L1  Bundesliga          2019         2025                   7
+2        5  Associazione Calcio Milan       IT1     Serie A          2019         2025                   7
+
+Null counts / Unique values:
+  club_id: 176 unique, 0 nulls
+  club_name: 176 unique, 0 nulls
+  league_id: 5 unique, 0 nulls
+  league_name: 5 unique, 0 nulls
+  first_season: 1 unique, 0 nulls
+  last_season: 4 unique, 0 nulls
+  n_rows_in_template: 4 unique, 0 nulls
+
+==========================================
+SHEET: Ownership summary (Total rows: 176)
+Columns: ['Club ID', 'Club', 'País', 'Liga', 'Propietario último al inicio del periodo', 'Propietario último al final del periodo', 'Cambio de control', 'Número de cambios de control', 'Fecha del cambio o cambios', 'Adquisición minoritaria relevante', 'Tipo de operación', 'Breve explicación', 'Nivel de confianza', 'Fuente principal', 'Fuente secundaria', 'Observaciones']
+
+Head(3):
+   Club ID                                  Club     País        Liga Propietario último al inicio del periodo Propietario último al final del periodo Cambio de control  Número de cambios de control Fecha del cambio o cambios Adquisición minoritaria relevante               Tipo de operación                                                                                                                                                         Breve explicación Nivel de confianza                                                                                                         Fuente principal                                                                                                        Fuente secundaria Observaciones
+0       39  1. Fußball- und Sportverein Mainz 05  Germany  Bundesliga    Club members / registered association   Club members / registered association                No                             0                        NaN                                No  No qualifying control transfer  No qualifying transfer of ultimate voting control was identified from 2019 through 2025; the member association or long-standing exception controller remained in place.             Medium  https://www.bundesliga.com/en/bundesliga/news/50-1-fifty-plus-one-german-football-soccer-rule-explained-ownership-22832  https://www.bundesliga.com/en/bundesliga/news/50-1-fifty-plus-one-german-football-soccer-rule-explained-ownership-22832           NaN
+1        3                  1. Fußball-Club Köln  Germany  Bundesliga    Club members / registered association   Club members / registered association                No                             0                        NaN                                No  No qualifying control transfer  No qualifying transfer of ultimate voting control was identified from 2019 through 2025; the member association or long-standing exception controller remained in place.             Medium  https://www.bundesliga.com/en/bundesliga/news/50-1-fifty-plus-one-german-football-soccer-rule-explained-ownership-22832  https://www.bundesliga.com/en/bundesliga/news/50-1-fifty-plus-one-german-football-soccer-rule-explained-ownership-22832           NaN
+2     2036        1. Fußballclub Heidenheim 1846  Germany  Bundesliga    Club members / registered association   Club members / registered association                No                             0                        NaN                                No  No qualifying control transfer  No qualifying transfer of ultimate voting control was identified from 2019 through 2025; the member association or long-standing exception controller remained in place.             Medium  https://www.bundesliga.com/en/bundesliga/news/50-1-fifty-plus-one-german-football-soccer-rule-explained-ownership-22832  https://www.bundesliga.com/en/bundesliga/news/50-1-fifty-plus-one-german-football-soccer-rule-explained-ownership-22832           NaN
+
+Null counts / Unique values:
+  Club ID: 176 unique, 0 nulls
+  Club: 176 unique, 0 nulls
+  País: 5 unique, 0 nulls
+  Liga: 5 unique, 0 nulls
+  Propietario último al inicio del periodo: 151 unique, 0 nulls
+  Propietario último al final del periodo: 147 unique, 0 nulls
+  Cambio de control: 3 unique, 0 nulls
+  Número de cambios de control: 4 unique, 0 nulls
+  Fecha del cambio o cambios: 65 unique, 110 nulls
+  Adquisición minoritaria relevante: 2 unique, 0 nulls
+  Tipo de operación: 47 unique, 0 nulls
+  Breve explicación: 92 unique, 0 nulls
+  Nivel de confianza: 3 unique, 0 nulls
+  Fuente principal: 122 unique, 0 nulls
+  Fuente secundaria: 94 unique, 0 nulls
+
+==========================================
+SHEET: Ownership events (Total rows: 121)
+Columns: ['Club ID', 'Club', 'Fecha de anuncio', 'Fecha de aprobación', 'Fecha de cierre', 'Vendedor', 'Comprador', 'Porcentaje adquirido', 'Propietario último anterior', 'Propietario último posterior', 'Tipo de operación', '¿Produjo cambio de control?', 'Estado', 'Fuente principal', 'Fuente secundaria', 'Observaciones']
+
+Head(3):
+   Club ID               Club Fecha de anuncio Fecha de aprobación Fecha de cierre                       Vendedor                                                                                               Comprador                   Porcentaje adquirido    Propietario último anterior     Propietario último posterior                               Tipo de operación ¿Produjo cambio de control?     Estado                                                                               Fuente principal                                                                                                                                                  Fuente secundaria                                                                                            Observaciones
+0     4102           AC Carpi       2021-08-09                 NaT      2021-08-20         Excluded Carpi FC 1909                                                                Claudio Lazzaretti / Athletic Carpi 2021  Sporting succession; new legal entity        Carpi FC 1909 ownership  Claudio Lazzaretti (new entity)  Exclusion / refoundation / sporting succession                   Uncertain  completed              https://temponews.it/2021/08/09/il-calcio-a-carpi-riparte-con-claudio-lazzaretti/                                                                   https://www.carpicalcio.it/comunicati/nota-del-presidente-dellathletic-carpi-claudio-lazzaretti/  Only a successor entity was identified; no conventional ownership transfer of the prior club was found.
+1     2919           AC Monza       2025-07-01                 NaT      2025-09-25  Fininvest / Berlusconi family                                                                                  Beckett Layne Ventures           80%; remaining 20% due later  Fininvest / Berlusconi family           Beckett Layne Ventures                    Share acquisition / takeover                         Yes  completed  https://www.acmonza.com/en/news/beckett-layne-ventures-finalizes-the-acquisition-of-ac-monza/                                                https://fininvest.it/en/press/fininvest-and-beckett-layne-ventures-finalize-the-first-closing-of-the-ac-monza-sale/                                                                                                      NaN
+2     1159  AS Nancy-Lorraine       2020-12-31                 NaT      2020-12-31              Jacques Rousselot  NewCity Capital-led consortium including Chien Lee, Krishen Sud, Randy Frankel and Pacific Media Group                      Controlling stake              Jacques Rousselot   NewCity Capital-led consortium                    Share acquisition / takeover                         Yes  completed        https://www.sportspro.com/news/as-nancy-ligue-2-takeover-chien-lee-pacific-media-group/  https://www.lequipe.fr/Football/Article/Le-triste-bilan-de-new-city-capital-proprietaire-de-l-as-nancy-lorraine-qui-se-dirige-tout-droit-vers-le-national/1330285                                                                                                      NaN
+
+Null counts / Unique values:
+  Club ID: 89 unique, 0 nulls
+  Club: 89 unique, 0 nulls
+  Fecha de anuncio: 118 unique, 0 nulls
+  Fecha de aprobación: 21 unique, 99 nulls
+  Fecha de cierre: 109 unique, 5 nulls
+  Vendedor: 119 unique, 0 nulls
+  Comprador: 112 unique, 0 nulls
+  Porcentaje adquirido: 90 unique, 0 nulls
+  Propietario último anterior: 111 unique, 0 nulls
+  Propietario último posterior: 105 unique, 0 nulls
+  Tipo de operación: 44 unique, 0 nulls
+  ¿Produjo cambio de control?: 3 unique, 0 nulls
+  Estado: 3 unique, 0 nulls
+  Fuente principal: 118 unique, 0 nulls
+  Fuente secundaria: 113 unique, 0 nulls
+
+==========================================
+SHEET: Research log (Total rows: 176)
+Columns: ['Club ID', 'Club investigado', 'Estado de la búsqueda', 'Fuentes consultadas', 'Problemas de identificación', 'Información pendiente o contradictoria', 'Nota de auditoría']
+
+Head(3):
+   Club ID                      Club investigado Estado de la búsqueda                                                                                                      Fuentes consultadas Problemas de identificación Información pendiente o contradictoria                                                                                                          Nota de auditoría
+0       39  1. Fußball- und Sportverein Mainz 05             Completed  https://www.bundesliga.com/en/bundesliga/news/50-1-fifty-plus-one-german-football-soccer-rule-explained-ownership-22832              None material.                       None identified.  Audited for 2019-01-01 through 2025-12-31. 0 ownership-related event(s) logged; 0 completed qualifying control change(s).
+1        3                  1. Fußball-Club Köln             Completed  https://www.bundesliga.com/en/bundesliga/news/50-1-fifty-plus-one-german-football-soccer-rule-explained-ownership-22832              None material.                       None identified.  Audited for 2019-01-01 through 2025-12-31. 0 ownership-related event(s) logged; 0 completed qualifying control change(s).
+2     2036        1. Fußballclub Heidenheim 1846             Completed  https://www.bundesliga.com/en/bundesliga/news/50-1-fifty-plus-one-german-football-soccer-rule-explained-ownership-22832              None material.                       None identified.  Audited for 2019-01-01 through 2025-12-31. 0 ownership-related event(s) logged; 0 completed qualifying control change(s).
+
+Null counts / Unique values:
+  Club ID: 176 unique, 0 nulls
+  Club investigado: 176 unique, 0 nulls
+  Estado de la búsqueda: 2 unique, 0 nulls
+  Fuentes consultadas: 123 unique, 0 nulls
+  Problemas de identificación: 11 unique, 0 nulls
+  Información pendiente o contradictoria: 7 unique, 0 nulls
+  Nota de auditoría: 10 unique, 0 nulls
